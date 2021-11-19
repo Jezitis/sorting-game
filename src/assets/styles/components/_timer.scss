@@ -1,0 +1,27 @@
+.timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+	
+  &__circle {
+    fill: none;
+    stroke: none;
+  }
+	
+  &__path-elapsed {
+    stroke-width: 7px;
+    stroke: $white;
+  }
+  &__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    stroke: $purple;
+  }
+	
+  &__svg {
+    transform: scaleX(-1);
+  }
+}

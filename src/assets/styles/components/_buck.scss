@@ -1,0 +1,71 @@
+.buck {
+  position: relative;
+  &__descr {
+    display: block;
+    padding: 8px 16px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 16px;
+    letter-spacing: 1.2px;
+    margin-bottom: 32px;
+
+    &.yellow {
+      background-color: $yellow;
+    }
+    &.green {
+      background-color: $green;
+    }
+    &.red {
+      background-color: $red;
+    }
+    &.blue {
+      background-color: $blue;
+    }
+  }
+
+  &__top {
+    position: absolute;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 25px;
+    top: 55px;
+
+    &.yellow {
+      background-image: url('../images/buck_top/bucktop_yellow.png');
+    }
+    &.red {
+      background-image: url('../images/buck_top/bucktop_red.png');
+    }
+    &.green {
+      background-image: url('../images/buck_top/bucktop_green.png');
+    }
+    &.blue {
+      background-image: url('../images/buck_top/bucktop_blue.png');
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 160px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &.yellow {
+      background-image: url('../images/buck_yellow.png');
+    }
+    &.red {
+      background-image: url('../images/buck_red.png');
+    }
+    &.green {
+      background-image: url('../images/buck_green.png');
+    }
+    &.blue {
+      background-image: url('../images/buck_blue.png');
+    }
+  }
+}

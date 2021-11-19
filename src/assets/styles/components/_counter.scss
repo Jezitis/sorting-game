@@ -1,0 +1,50 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  align-items: center;
+
+  &.correct {
+    background-color: $green;
+  }
+
+  &.incorrect {
+    background-color: $red;
+  }
+
+  &.repeat {
+    width: 200px;
+    background-color: $purple;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &.correct {
+      width: 30px;
+      line-height: 32px;
+      background-image: url('../images/ok.png');
+    }
+
+    &.incorrect {
+      background-image: url('../images/no.png');
+    }
+
+    &.repeat {
+      background-image: url('../images/reload.png');
+    }
+  }
+
+  &__value {
+    color: $white;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
